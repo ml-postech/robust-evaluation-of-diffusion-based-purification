@@ -1,0 +1,18 @@
+python -u test.py \
+    --use_cuda \
+    --seed 1 \
+    --batch_size 16 \
+    --exp test \
+    --dataset cifar10 \
+    --attack_method bpda \
+    --n_iter 200 \
+    --eot 20 \
+    --def_max_timesteps 30,30,30,30,50,50,125,125 \
+    --def_num_diffusion_steps 30,30,30,30,50,50,125,125 \
+    --def_sampling_method ddpm \
+    --num_ensemble_runs 10 \
+    --att_max_timesteps 30,30,30,30,50,50,125,125 \
+    --att_num_diffusion_steps 30,30,30,30,50,50,125,125 \
+    --att_sampling_method ddpm \
+    --num_process_per_node 4 \
+    --port 1234

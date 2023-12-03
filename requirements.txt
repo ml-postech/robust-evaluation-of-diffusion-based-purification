@@ -1,0 +1,13 @@
+six
+numpy
+torch
+torchvision
+Pillow
+xformers==0.0.22
+robustbench @ git+https://github.com/RobustBench/robustbench.git@v1.0
+lmdb
+pyarrow==11.0.0
+PyYAML
+ninja
+nested_dict
+scipy

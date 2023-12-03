@@ -1,0 +1,6 @@
+*/__pycache__/*
+
+*/models/*
+*/result/*
+*/sbatch_log/*
+*/wandb/*

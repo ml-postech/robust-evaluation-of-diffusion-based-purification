@@ -1,0 +1,18 @@
+python -u test.py \
+    --use_cuda \
+    --seed 1 \
+    --batch_size 16 \
+    --exp test \
+    --dataset svhn \
+    --attack_method pgd \
+    --n_iter 200 \
+    --eot 20 \
+    --def_max_timesteps 30,30,30,30,50,50,80,80 \
+    --def_num_diffusion_steps 30,30,30,30,50,50,80,80 \
+    --def_sampling_method ddpm \
+    --num_ensemble_runs 10 \
+    --att_max_timesteps 30,50,80 \
+    --att_num_diffusion_steps 1,1,5 \
+    --att_sampling_method ddpm \
+    --num_process_per_node 4 \
+    --port 1234
